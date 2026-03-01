@@ -2,8 +2,10 @@
 (function () {
   const container = document.getElementById('code-rain');
   if (!container) return;
+
   const chars = "01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン{}[]<>/\\|=+-*&^%$#@!";
   const columns = 40;
+
   for (let i = 0; i < columns; i++) {
     let line = '';
     for (let j = 0; j < 60; j++) {
@@ -18,6 +20,7 @@
     container.appendChild(el);
   }
 })();
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
